@@ -46,7 +46,7 @@ def brain_prime():
     print(f'Congratulations, {name}!')
 
 
-#Функция, если игрок ответил yes
+# Функция, если игрок ответил yes
 def answer_yes():
     global attempt
     # выносим длину списка делителей в отдельную переменную
@@ -62,7 +62,7 @@ def answer_yes():
         attempt = 0
 
 
-#Функция, если игрок ответил no
+# Функция, если игрок ответил no
 def answer_no():
     global attempt
     div = len(is_finding_the_divisor(range_num))

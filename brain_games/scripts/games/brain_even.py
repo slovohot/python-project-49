@@ -18,7 +18,7 @@ def brain_even():
     global answer
     global result
     result = 0
-    print('Answer "yes" if the number is even, otherwise answer "no"')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     # Цикл для определения трех правильных попыток
     while result < 3:
         range_num = random.randint(1, 100)
