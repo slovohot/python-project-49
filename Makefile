@@ -16,6 +16,9 @@ brain-gcd:
 brain-progression:
 	poetry run brain-progression
 
+brain-prime:
+	poetry run brain-prime
+
 build:
 	poetry build
 
@@ -28,3 +31,10 @@ package-install:
 	
 lint:
 	poetry run flake8 brain_games/
+
+games:
+	poetry install
+	poetry build
+	poetry publish --dry-run
+	python3 -m pip install --user dist/*.whl
+	python3 -m pip install --force-reinstall --user dist/*.whl
