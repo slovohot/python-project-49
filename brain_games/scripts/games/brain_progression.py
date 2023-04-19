@@ -65,9 +65,9 @@ def generation_version_one():
         print('Correct!')
         attempt += 1  # попытка засчитана
     else:
-        attempt = 0  # обнуляем попытки
         print(f"'{answer}' is wrong answer ;(. Correct "
               f"answer was '{result_num_one}'.\nLet's try again, {name}!")
+        exit()
 
 
 # остальные функции работают аналогично generation_version_one()
@@ -93,9 +93,9 @@ def generation_version_two():
         print('Correct!')
         attempt += 1  # попытка засчитана
     else:
-        attempt = 0
         print(f"'{answer}' is wrong answer ;(. Correct "
               f"answer was '{result_num_two}'.\nLet's try again, {name}!")
+        exit()
 
 
 # остальные функции работают аналогично generation_version_one()
@@ -120,9 +120,9 @@ def generation_version_three():
         print('Correct!')
         attempt += 1  # попытка засчитана
     else:
-        attempt = 0
         print(f"'{answer}' is wrong answer ;(. Correct "
               f"answer was '{result_num_three}'.\nLet's try again, {name}!")
+        exit()
 
 
 # приветствие игрока

@@ -59,7 +59,7 @@ def answer_yes():
     else:
         print(f"'yes' is wrong answer ;(. Correct answer was "
               f"'no'. \nLet's try again, {name}!")
-        attempt = 0
+        exit()
 
 
 # Функция, если игрок ответил no
@@ -72,7 +72,7 @@ def answer_no():
     else:
         print(f"'no' is wrong answer ;(. Correct answer was "
               f"'yes'. \nLet's try again, {name}!")
-        attempt = 0
+        exit()
 
 
 def greet():

@@ -40,7 +40,7 @@ def brain_gcd():
         else:
             print(f"'{answer}' is wrong answer ;(. Correct "
                   f"answer was '{max_divisors}'.\nLet's try again, {name}!")
-            attempt = 0  # анулируем правильные ответы, если они были
+            exit()  # выходим из программы
     if attempt == 3:  # при наличии трех правильных попыток - win
         print(f'Congratulations, {name}!')
 
