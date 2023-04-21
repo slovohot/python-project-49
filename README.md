@@ -19,14 +19,14 @@ make package-install
 brain-even: 
 [![asciicast](https://asciinema.org/a/yVcHyv3NOiy61PTklsVfZf2vL.svg)](https://asciinema.org/a/yVcHyv3NOiy61PTklsVfZf2vL)
 
-asciinema brain-cals:
+brain-cals:
 [![asciicast](https://asciinema.org/a/usBUb1X6gqYtJpGqBSisTOEPf.svg)](https://asciinema.org/a/usBUb1X6gqYtJpGqBSisTOEPf)
 
-asciinema brain-gcd:
+brain-gcd:
 [![asciicast](https://asciinema.org/a/aA34VcfxRi4s5vgHyqCRX6oZo.svg)](https://asciinema.org/a/aA34VcfxRi4s5vgHyqCRX6oZo)
 
-asciinema brain-progression:
+brain-progression:
 [![asciicast](https://asciinema.org/a/Vbj6CJGm3OKqV3pQAIFsHXbab.svg)](https://asciinema.org/a/Vbj6CJGm3OKqV3pQAIFsHXbab)
 
-asciinema brain-prime:
+brain-prime:
 [![asciicast](https://asciinema.org/a/DG45ImVSqbwu68l6UJtJNZDI9.svg)](https://asciinema.org/a/DG45ImVSqbwu68l6UJtJNZDI9)
