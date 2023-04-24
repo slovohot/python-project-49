@@ -1,23 +1,27 @@
 import random
 
 
-def promo_question():
-    return 'What number is missing in the progression?'
+GAME_RULE = 'What number is missing in the progression?'
 
 
-# Функция вычислений, правильного вопроса и ответа
-def get_game():
-    # рандомный интервал чисел
-    interval_num = random.randint(1, 3)
+def generate_progression():
+    # рандомный интервал между числами
+    interval_num = random.randint(1, 5)
     # список чисел
     list_of_number = [x for x in range(1, 100, interval_num)]
     # создаем два индекса для итогого списка в вопрос
-    gen_index_one = random.randint(0, 25)
+    gen_index_one = random.randint(0, 10)
     gen_index_two = gen_index_one + 10
     # конечный список чисел
     end_list_num = list_of_number[gen_index_one:gen_index_two]
     # определяем рандомный индекс для end_list_num
-    random_index = random.randint(0, 9)
+    random_index = random.randint(0, 5)
+
+    return end_list_num, random_index
+
+# Функция вычислений, правильного вопроса и ответа
+def get_game():
+    end_list_num, random_index = generate_progression()
     # определяем число = парвильный ответ
     correct_answer = end_list_num[random_index]
     # заменяем правильный ответ на точки

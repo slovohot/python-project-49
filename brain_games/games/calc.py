@@ -1,31 +1,27 @@
 import random
 
 
-def promo_question():
-    return 'What is the result of the expression?'
+GAME_RULE = 'What is the result of the expression?'
+
+
+def calculate_expression(random_oper, rand_num_one, rand_num_two):
+    if random_oper == ' + ':
+        correct_answer = rand_num_one + rand_num_two
+        return correct_answer
+    elif random_oper == ' - ':
+        correct_answer = rand_num_one - rand_num_two
+        return correct_answer
+    else:
+        correct_answer = rand_num_one * rand_num_two
+        return correct_answer
 
 
 # Функция вычислений, правильного вопроса и ответа
 def get_game():
-    RAND_NUM_ONE = random.randint(1, 10)
-    RAND_NUM_TWO = random.randint(1, 10)
+    rand_num_one = random.randint(1, 10)
+    rand_num_two = random.randint(1, 10)
     math_oper = [' + ', ' - ', ' * ']
     random_oper = random.choice(math_oper)
-    question = str(RAND_NUM_ONE) + random_oper + str(RAND_NUM_TWO)
-
-    if random_oper == ' + ':
-        correct_answer = RAND_NUM_ONE + RAND_NUM_TWO
-        return question, correct_answer
-    elif random_oper == ' - ':
-        correct_answer = RAND_NUM_ONE - RAND_NUM_TWO
-        return question, correct_answer
-    else:
-        correct_answer = RAND_NUM_ONE * RAND_NUM_TWO
-        return question, correct_answer
-
-
-"""
-был еще вариант использовать - correct_answer = eval(question)
-но я прочитал, что ее использование не желательно, поэтому оставил
-if-elif-else
-"""
+    question = str(rand_num_one) + random_oper + str(rand_num_two)
+    correct_answer = calculate_expression(random_oper, rand_num_one, rand_num_two)
+    return question, correct_answer
