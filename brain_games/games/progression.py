@@ -19,6 +19,7 @@ def generate_progression():
 
     return end_list_num, random_index
 
+
 # Функция вычислений, правильного вопроса и ответа
 def get_game():
     end_list_num, random_index = generate_progression()

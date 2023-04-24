@@ -4,7 +4,7 @@ import random
 GAME_RULE = 'What is the result of the expression?'
 
 
-def calculate_expression(random_oper, rand_num_one, rand_num_two):
+def calc_expression(random_oper, rand_num_one, rand_num_two):
     if random_oper == ' + ':
         correct_answer = rand_num_one + rand_num_two
         return correct_answer
@@ -23,5 +23,5 @@ def get_game():
     math_oper = [' + ', ' - ', ' * ']
     random_oper = random.choice(math_oper)
     question = str(rand_num_one) + random_oper + str(rand_num_two)
-    correct_answer = calculate_expression(random_oper, rand_num_one, rand_num_two)
+    correct_answer = calc_expression(random_oper, rand_num_one, rand_num_two)
     return question, correct_answer
